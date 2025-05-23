@@ -1,0 +1,137 @@
+@import 'btn';
+  
+.first {
+    background-image: url(../images/city.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+
+    &__container {
+        display: flex;
+        gap: 90px;
+        max-width: 900px;
+        align-items: center;
+
+        >div {
+            flex: 1;
+        }
+
+        .text-div {
+            text-align: left; 
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .image-div {
+            display: flex;
+            flex-direction: column; 
+            gap: 10px;
+
+
+            img:first-child {
+                align-self: flex-start; 
+            }
+
+            img:last-child {
+                align-self: flex-end; 
+            }
+        }
+    }
+}
+
+.first-title {
+    color: #FFFFFF;
+    font-family: $aleo;
+    font-size: 36px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.first-p {
+    color: #FFFFFF;
+    font-family: $josefin;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+
+
+
+@media (max-width: 1000px) {
+  .first__container {
+    gap: 50px;
+    padding: 0 20px;
+  }
+
+  .first-title {
+    font-size: 30px;
+  }
+
+  .first-p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .first__container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+
+    .text-div {
+      text-align: center;
+      align-items: center;
+    }
+
+    .image-div {
+      flex-direction: row;
+      justify-content: space-between;
+
+      img:first-child,
+      img:last-child {
+        align-self: center;
+      }
+
+      img {
+        width: 45%; 
+      }
+    }
+  }
+
+  .first-title {
+    font-size: 26px;
+  }
+
+  .first-p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .first {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .first__container {
+    gap: 30px;
+  }
+
+  .image-div {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+  }
+
+}

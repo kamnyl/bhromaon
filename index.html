@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8ec89c4bb3.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script/script.js" defer></script>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/index.css">
     <title>Bhromaon</title>
@@ -26,10 +27,55 @@
         </form>
         <div class="header__anchor">
             <p>Scroll Down</p>
-            <a href="#"><i class="icon fa-solid fa-chevron-down"></i></a>
+            <a href="#anchor"><i class="icon fa-solid fa-chevron-down"></i></a>
         </div>
     </section>
 </header>
      <!--HEADER-->
+
+
+    <!--NAVIGATION BAR-->
+    <div class="navigation_container" id="anchor">
+      <div class="navigation">
+        <h2 class="logo">Bhromaon</h2>
+        <nav class="nav" id="nav-bar">
+          <a class="navicon" id="burger" onclick="burgerMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+    
+          <ul class="nav__list">
+            <li class="nav__li"><a class="nav__link" href="#">Who we are</a></li>
+            <li class="nav__li"><a class="nav__link" href="#">What we do</a></li>
+            <li class="nav__li"><a class="nav__link" href="#">Travel with us</a></li>
+            <li class="nav__li"><a class="nav__link" href="#">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--NAVIGATION BAR-->
+    
+    
+    <!--FIRST SECTION-->
+    <section class="first">
+      <div class="first__container">
+        <div class="text-div">
+          <h4 class="first-title">Why Choose Us</h4>
+          <p class="first-p">
+            Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so
+            blinded by desire, that they cannot foresee
+          </p>
+          <p class="first-p">
+            Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire,
+            that.
+          </p>
+          <button class="btn">Explore places</button>
+        </div>
+        <div class="image-div">
+          <img src="images/house.png" alt="House by a lake">
+          <img src="images/sunrise.png" alt="Mountain sunrise">
+        </div>
+      </div>
+    </section>
+    <!--FIRST SECTION-->
 </body>
 </html>

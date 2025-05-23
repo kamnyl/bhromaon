@@ -1,0 +1,99 @@
+.navigation_container {
+  background-color: $main-color;
+  padding: 20px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between; 
+  background-color: $main-color;
+  padding: 0 16px;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+}
+
+.logo {
+  font-family: $josefin;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 26px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__li {
+    list-style: none;
+  }
+
+  &__link {
+    font-family: $aleo;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+
+.navicon {
+  display: none;
+  font-size: 24px;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .nav__list {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background-color: $main-color;
+    padding: 10px 0;
+    position: absolute;
+    top: 450px; 
+    right: 0;
+    width: 100%;
+  }
+
+  .nav.responsive .nav__list {
+    display: flex;
+  }
+  
+  .navicon {
+    display: block;
+    margin-left: auto;
+  }
+
+  .navigation {
+    justify-content: space-between;
+  }
+
+  .nav__link {
+    font-size: 17px;
+  }
+}

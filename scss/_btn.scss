@@ -1,0 +1,16 @@
+.btn {
+    border: none;
+    font-family: $aleo;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 20px 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    max-width: 200px;
+    background: linear-gradient(35deg,#4b66dc 50%,$main-color 50%);
+
+    &:hover {
+        background: $main-color;
+            transform: scale(1.04);
+    }
+}
