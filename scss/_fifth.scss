@@ -83,17 +83,18 @@
     justify-content: center;
     max-height: none;
     height: auto;
+    width: 80%;
+  }
+
+  .fifth-title {
+    padding: 20px;
   }
 
   .image-tourist {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
     height: 200px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
 
   .text-div {
