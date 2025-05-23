@@ -153,6 +153,10 @@ header {
         border-width: 2px;
     }
 
+    .header__form input::placeholder {
+    font-size: 12px; 
+  }
+
     input {
         font-size: 12px;
     }
